@@ -1,0 +1,223 @@
+#print(3)
+'''
+print(3)
+print(2)
+'''
+#컨트롤 버튼을 누른채로 /를 눌러주셔도 주석처리가 됩니당
+# print(3)
+# print(4)
+
+#10718번
+#1
+# print("강한친구 대한육군")
+# print("강한친구 대한육군")
+#2
+#print("강한친구 대한육군\n강한친구 대한육군")
+#3
+#print("강한친구 대한육군\n"*2)
+
+#2588번
+#hint : % // 연산자 이용!
+#(1)(2)는 입력해야하는 부분 (3~6) 출력이 되어야하는 부분
+
+# x1 = int(input())
+# x2 = int(input())
+# x2_1 = x2//10//10
+# x2_2 = x2//10%10
+# x2_3 = x2%10
+# x3 = x1*x2_3
+# x4 = x1*x2_2
+# x5 = x1*x2_1
+# x6 = x3 + x4*10 + x5*100
+# print(x3)
+# print(x4)
+# print(x5)
+# print(x6)
+
+#
+# a = 'hobby'
+# print(a.count('b'))
+# b = "python is the best choice"
+# print(b.find('b'))
+# c = "life is too short"
+# print(c.index('t'))
+# print(",".join('abcd'))
+# d = "hi"
+# print(d.upper())
+# e = "HI"
+# print(e.lower())
+# f = "hi  "
+# print(f)
+# print(f.rstrip())
+# g = "  hi"
+# print(g.lstrip())
+# h = " hi "
+# print(h.strip())
+# i = "Life is too short"
+# print(i.replace("Life", "Your leg"))
+# j = "Life is too short"
+# print(j.split())
+# k = "a:b:c:d"
+# print(k.split(":"))
+
+# ticker = "btc_krw"
+# print(ticker.upper())
+# print(ticker.split("_"))
+# data = "039490		"
+# print(data.rstrip())
+# print(data.strip())
+
+# a = int(input())
+# b = int(input())
+# if a > b:
+#     print("a는 b보다 크다")
+
+#and (조건이 모두 참일 때 참이 된다.)
+# a = 6
+# b = 4
+# if a%2==0 and b%2==0:
+#     print("a와 b는 짝수다.")
+# or (조건 중 하나만 참이면 참이 된다.)
+# not (조건이 거짓이면 참이다.)
+#
+# a = int(input())
+# b = int(input())
+# # if (a + b > 8):
+# #     pass
+# #     #print("a와 b의 합은 8보다 크다.")
+# if a>b:
+#     print("a는 b보다 크다")
+# else:
+#     print("a는 b보다 작거나 같다")
+
+# 돈이 5000원 있으면 택시를 타고,
+# 5000원은 없지만 1000원이 있으면 버스를 타고,
+# 5000원도 없고 1000원도도 없으면 걸어 가라.
+#money = int(input())
+# if money == 5000:
+#     print("taxi")
+# else:
+#     if money == 1000:
+#         print("bus")
+#     else:
+#         print("walk")
+# money = int(input())
+# if money == 5000:
+#     print("taxi")
+# elif money == 1000:
+#     print("bus")
+# else:
+#     print("walk")
+#1330번
+# a = int(input())
+# b = int(input())
+# if a > b:
+#     print(">")
+# elif a < b:
+#     print("<")
+# else:
+#     print("==")
+
+#9498번
+# score = int(input())
+# if score >= 90 and score <= 100:
+#     print("A")
+# elif score >= 80 and score <= 89:
+#     print("B")
+# elif score >= 70 and score <= 79:
+#     print("C")
+# elif score >= 60 and score <= 69:
+#     print("D")
+# else:
+#     print("F")
+
+#2753번
+# year = int(input())
+# if (year%4==0 and year%100!=0) or year%400==0:
+#     print(1)
+# else:
+#     print(0)
+
+#14681
+# x = int(input())
+# y = int(input())
+# if x > 0:
+#     if y > 0:
+#         print(1)
+#     elif y < 0:
+#         print(4)
+# elif x < 0:
+#     if y > 0:
+#         print(2)
+#     elif y < 0:
+#         print(3)
+
+#계산기
+# x = int(input())
+# y = int(input())
+# z = input()
+# if z == "+":
+#     print(x+y)
+# elif z == "-":
+#     print(x-y)
+# elif z == "*":
+#     print(x*y)
+# elif z == "//":
+#     print(x//y)
+# elif z == "%":
+#     print(x%y)
+# else:
+#     print("error")
+
+#정각 판별하는 문제 - 17분까지 휴식
+# time = input()
+# if time[3] and time[4] == "0":
+#     print("정각입니다.")
+# else:
+#     print("정각이 아닙니다.")
+#
+# time = input()
+# if time[-2] and time[-1] == "0":
+#     print("정각입니다.")
+# else:
+#     print("정각이 아닙니다.")
+#
+# time = input()
+# if time[3:] == "00":
+#     print("정각입니다.")
+# else:
+#     print("정각이 아닙니다.")
+
+#예시
+# treeHit = 0
+# while treeHit < 10:                         #조건
+#     #treeHit = treeHit + 1                   #내부값 갱신
+#     treeHit += 1
+#     print("나무를 %d번 찍었습니다." %treeHit)
+#     if treeHit == 10:                       #세부적인 조건
+#         print("나무 넘어갑니다.")
+
+#while - break문 예시
+# coffee = 10
+# while True:
+#     money = int(input("돈을 넣어 주세요 : "))
+#     if money == 300:
+#         print("커피를 줍니다.")
+#         coffee -= 1
+#     elif money > 300:
+#         print("거스름돈 %d를 주고 커피를 줍니다." %(money-300))
+#         coffee -= 1
+#     else:
+#         print("돈을 다시 돌려주고 커피를 주지 않습니다.")
+#     print("남은 커피의 양은 %d개 입니다." %coffee)
+#     if coffee == 0:
+#         print("커피가 다 떨어졌습니다. 판매를 중지합니다.")
+#         break
+
+#while - continue
+# a = 0
+# while a < 10:
+#     a = a+1
+#     if a%2 == 0:
+#         continue
+#     print(a)
